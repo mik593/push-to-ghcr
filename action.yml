@@ -109,6 +109,7 @@ runs:
           --build-arg ${{ inputs.build_arg }} \
           \
           --platform linux/amd64,linux/arm64 \
+          --load \
           \
           --tag ${{ inputs.repository }}/${IMAGE_NAME}:${COMMIT_TAG} \
           --tag docker.io/${IMAGE_NAME}:${COMMIT_TAG} \
